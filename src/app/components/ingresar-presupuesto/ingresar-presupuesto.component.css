@@ -1,0 +1,12 @@
+input{
+    text-align: center;
+    border: 1px solid #62A27A;
+}
+
+button{
+    width: 100%;
+}
+
+.textError{
+    font-size: 1rem;
+}
