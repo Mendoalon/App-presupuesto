@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PresupuestoService } from '../../services/presupuesto.service';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-ingresar-presupuesto',
   templateUrl: './ingresar-presupuesto.component.html',
@@ -29,7 +30,7 @@ export class IngresarPresupuestoComponent implements OnInit {
       this._Router.navigate(['/gastos']);
     }else{
       this.cantidadIncorrecta = true;
-
+      
   }
   
 

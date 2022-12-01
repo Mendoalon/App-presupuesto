@@ -12,11 +12,11 @@ export class PresupuestoService {
     this.restante = 0;
   }
 
-  valor(): void {
-    console.log(this.presupuesto, this.restante);
+  agregarGasto(gasto: any){
+    this.restante = this.restante - gasto.cantidad;
+    console.log(this.restante);
     
   }
- 
   
 }
 
