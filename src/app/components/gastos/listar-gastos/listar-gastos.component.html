@@ -1,1 +1,29 @@
-<p>listar-gastos works!</p>
+<h4 class="text-center">Listados de Gastos</h4>
+<hr>
+<div class="row style">
+
+    <div class="col-lg-6">
+        <div class="alert alert-success sizeAlert">
+            Presupuesto: <strong> $ {{presupuesto | number}}</strong>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="alert" [ngClass]="aplicarColorRestante()" >
+            Restante: <strong> $ {{restante | number}}</strong>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <ul class="list-group list-group-flush">
+            <li *ngFor="let gatos of listGastos"
+                class="list-group-item d-flex justify-content-between">
+                <strong> {{gatos.nombre}} </strong>
+                <span class="badge rounded-pill bg-secondary"> $ {{gatos.cantidad}} </span>
+            </li>
+        </ul>
+    </div>
+</div>
